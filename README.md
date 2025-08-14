@@ -50,7 +50,8 @@ Then check the output of:
 kvm-ok
 ```
 
-
+On ASUS Bios with a Ryzen CPU, the bios setting to enable Kernel Virtual
+Machines is "SVM" mode. 
 
 
 **Below is original README** 
