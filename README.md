@@ -1,3 +1,62 @@
+
+# Few notes
+
+Started this on OS X, but pushed to git mostly to be able to bring over to
+Linux. Good to have a working version on Linux box while writing code 
+
+There are several typos in the React Native docs for getting Turbo Modules
+in C++ working. These docs:
+
+https://reactnative.dev/docs/the-new-architecture/pure-cxx-modules
+
+This video is a helpful walkthrough for getting sample version up and
+running on Android and iOS. Covers the typos and what to correct:
+
+https://www.youtube.com/watch?v=y-wBZcPJnB4
+
+# Linux install things
+
+Short list of some things I needed to have this also up and running for
+Linux. 
+
+
+Install react native:
+
+```
+npm install -g react-native-cli
+```
+
+Install full on Android Studio (not just the SDK):
+
+```
+sudo apt install default-jdk -y
+sudo add-apt-repository ppa:maarten-fonville/android-studio
+sudo apt update
+sudo apt install android-studio -y
+```
+
+After the above, make a fame blank app and install an emulator.
+
+Start messing with KVM? Hmmm. What a pain ... first bios (apparently) then:
+
+```
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+sudo adduser $USER kvm
+```
+
+Then check the output of:
+
+```
+kvm-ok
+```
+
+
+
+
+**Below is original README** 
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
